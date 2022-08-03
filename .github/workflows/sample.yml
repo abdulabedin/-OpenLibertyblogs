@@ -23,19 +23,13 @@ on:
         # default: ${{ github.actor }}
         type: string
 
-env:
-  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-name: Create an issue on push
-permissions:
-  contents: read
-  issues: write 
 jobs:
   stuff:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: JasonEtco/create-an-issue@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Issue From File
+        id: ciff
+        uses: peter-evans/create-issue-from-file@v4
         with:
-          filename: .github/ISSUE_TEMPLATE/release-blog-post.md
+          title: An example issue
+          content-filepath: .github/ISSUE_TEMPLATE/release-blog-post.md
