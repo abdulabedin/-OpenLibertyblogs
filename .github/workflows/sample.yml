@@ -1,0 +1,41 @@
+# This is a basic workflow to help you get started with Actions
+
+on: 
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version of OpenLiberty to generate blog for, e.g. 22.0.0.9, 22.0.0.9-beta'
+        required: true
+        type: string
+      publish-date:
+        description: 'Date of publish of the blog, format: YYYY-MM-DD'
+        required: true
+        default: '2050-01-01'
+        type: string
+      author-name:
+        description: 'Name of the anthor'
+        required: true
+        # default: ${{ github.actor }}
+        type: string
+      github-username:
+        description: 'GitHub username of the anthor'
+        required: true
+        # default: ${{ github.actor }}
+        type: string
+
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+name: Create an issue on push
+permissions:
+  contents: read
+  issues: write 
+jobs:
+  stuff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/ISSUE_TEMPLATE/release-blog-post.md
