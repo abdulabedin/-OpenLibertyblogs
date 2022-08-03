@@ -1,0 +1,84 @@
+---
+layout: post
+title: "// https://github.com/OpenLiberty/open-liberty/issues/21490
+[#SUB_TAG_0]
+=== Add application name to LogRecordContext Extension and as JSON logging field
+
+   
+   
+If you have previously provided this information for an Open Liberty beta blog post and nothing has changed since the beta, just provide a link to the published beta blog post and we'll take the information from there.
+
+
+
+For more details, check the LINK[LINK_DESCRIPTION].
+
+// // // // // // // //
+// In the preceding section:
+// Replace TAG_X/SUB_TAG_X with the given tag of your secton from the contents list
+// Replace SUB_FEATURE_TITLE/FEATURE_X_TITLE with the given title from the contents list 
+// Replace FEATURE with the feature name for the server.xml file e.g. mpHealth-1.4
+// Replace LINK with the link for extra information given for the feature
+// Replace LINK_DESCRIPTION with a readable description of the information
+// // // // // // // //
+
+[#CVEs]
+== Security vulnerability (CVE) fixes in this release
+[cols="5*"]
+|===
+|CVE |CVSS Score |Vulnerability Assessment |Versions Affected |Notes
+
+|Link[CVE-XXXX-XXXXX]
+|Score
+|vulnerability
+|Affected versions
+|Affected Features and other notes
+|===
+// // // // // // // //
+// In the preceding section:
+// If there were any CVEs addressed in this release, fill out the table.  For the information, reference https://github.com/OpenLiberty/docs/blob/draft/modules/ROOT/pages/security-vulnerabilities.adoc.  If it has not been updated for this release, reach out to Kristen Clarke or Michal Broz.
+// Note: When linking to features, use the 
+// `link:{url-prefix}/docs/latest/reference/feature/someFeature-1.0.html[Some Feature 1.0]` format and 
+// NOT what security-vulnerabilities.adoc does (feature:someFeature-1.0[])
+//
+// If there are no CVEs fixed in this release, replace the table with: 
+// "There are no security vulnerability fixes in Open Liberty [22.0.0.7]."
+// // // // // // // //
+For a list of past security vulnerability fixes, reference the link:{url-prefix}/docs/latest/security-vulnerabilities.html[Security vulnerability (CVE) list].
+
+
+[#bugs]
+== Notable bugs fixed in this release
+
+
+We’ve spent some time fixing bugs. The following sections describe just some of the issues resolved in this release. If you’re interested, here’s the  link:https://github.com/OpenLiberty/open-liberty/issues?q=label%3Arelease%3A22007S+label%3A%22release+bug%22[full list of bugs fixed in 22.0.0.7].
+
+// // // // // // // //
+// In the preceding section:
+// For this section ask either Michal Broz or Tom Evans or the #openliberty-release-blog channel for Notable bug fixes in this release.
+// Present them as a list in the order as provided, linking to the issue and providing a short description of the bug and the resolution.
+// If the issue on Github is missing any information, leave a comment in the issue along the lines of:
+// "@[issue_owner(s)] please update the description of this `relesae bug` using the [bug report template](https://github.com/OpenLiberty/open-liberty/issues/new?assignees=&labels=release+bug&template=bug_report.md&title=)" 
+// Feel free to message the owner(s) directly as well, especially if no action has been taken by them.
+// For inspiration about how to write this section look at previous blogs e.g- 20.0.0.10 or 21.0.0.12 (https://openliberty.io/blog/2021/11/26/jakarta-ee-9.1.html#bugs)
+// // // // // // // //
+
+
+// // // // // // // //
+// If there were updates to guides since last release, keep the following, otherwise remove section.
+// Check with Gilbert Kwan, otherwise Michal Broz or YK Chang
+// // // // // // // //
+[#guides]
+== New and updated guides since the previous release
+As Open Liberty features and functionality continue to grow, we continue to add link:https://openliberty.io/guides/?search=new&key=tag[new guides to openliberty.io] on those topics to make their adoption as easy as possible.  Existing guides also receive updates in order to address any reported bugs/issues, keep their content current, and expand what their topic covers.
+
+// // // // // // // //
+// In the following section, list any new guides, or changes/updates to existing guides.  
+// The following is an example of how the list can be structured (similar to the bugs section):
+// * link:{url-prefix}/guides/[new/updated guide].html[Guide Title]
+//  ** Description of the guide or the changes made to the guide.
+// // // // // // // //
+
+
+== Get Open Liberty 22.0.0.7 now
+
+Available through <<run,Maven, Gradle, Docker, and as a downloadable archive>>.
