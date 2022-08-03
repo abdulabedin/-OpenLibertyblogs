@@ -54,3 +54,12 @@ jobs:
           assignees: ${{ github.actor }}
           body: "Preview draft at: ${{ steps.gen-url.outputs.url }}"
           # TODO put links in the body
+          
+      - name: Create an issue on push
+
+      - uses: actions/checkout@v2
+      - uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/ISSUE_TEMPLATE/release-blog-post.md
